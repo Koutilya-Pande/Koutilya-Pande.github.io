@@ -1,6 +1,6 @@
 'use client'
 
-import { Card, CardContent } from './ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { Database, Code, BarChart2, Cloud, Train, Settings, MessageSquare } from 'lucide-react'
 
 interface SkillCategory {

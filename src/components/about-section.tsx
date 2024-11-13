@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Button } from '@/src/components/ui/button'
+import { Button } from '@/components/ui/button'
 import { ChevronDown } from 'lucide-react'
 import React from 'react';
 
@@ -18,7 +18,7 @@ export default function AboutSection() {
       <p className="max-w-2xl mx-auto mb-8">
         Passionate about leveraging artificial intelligence and machine learning to solve complex problems. 
         With a strong foundation in data science and a keen eye for innovation, 
-        I strive to push the boundaries of what's possible with AI.
+        I strive to push the boundaries of whats possible with AI.
       </p>
       <Button onClick={() => {}} className="animate-bounce">
         Explore My Skills
