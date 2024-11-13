@@ -29,8 +29,8 @@ export default function EducationSection() {
                 <Image 
                   src={edu.logo} 
                   alt={`${edu.school} logo`} 
-                  width={12} // Set the width of the logo
-                  height={12} // Set the height of the logo
+                  width={50} // Set the width of the logo
+                  height={50} // Set the height of the logo
                   className="mr-4" // Add margin to the right
                 /> 
                 <div className="flex-1"> {/* Allow text to take remaining space */}
