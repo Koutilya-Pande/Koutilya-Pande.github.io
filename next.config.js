@@ -1,15 +1,14 @@
-
-
-
-// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // Set your base path to match your GitHub repo name if it's not your username.github.io
- 
+  distDir: 'build',
   images: {
     unoptimized: true,
   },
+  pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
+  experimental: {
+    appDir: true,
+  }
 };
 
 module.exports = nextConfig;
