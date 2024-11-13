@@ -1,0 +1,50 @@
+/* eslint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* eslint-enable */
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Add these styles for the timeline arrows */
+.left-arrow::before {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 32px;
+  border: 12px solid transparent;
+  border-left-color: white;
+  z-index: 1;
+}
+
+.right-arrow::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 32px;
+  border: 12px solid transparent;
+  border-right-color: white;
+  z-index: 1;
+}
