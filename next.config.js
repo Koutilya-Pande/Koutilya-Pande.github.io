@@ -6,9 +6,7 @@ const nextConfig = {
     unoptimized: true,
   },
   pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
-  experimental: {
-    appDir: true,
-  }
+  
 };
 
 module.exports = nextConfig;
