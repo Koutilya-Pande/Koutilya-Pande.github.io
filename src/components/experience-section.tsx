@@ -5,7 +5,7 @@ export default function ExperienceSection() {
     { 
       title: "Data Scientist", 
       company: "Keelworks Foundation", 
-      period: "Mar’24 – Present",
+      period: "Mar'24 - Present",
       responsibilities: [
         "Optimized homepage layout by A/B testing comparing two versions, resulting in a 28% increase in CTR",
         "Utilized Power BI to transform and merge data, enhancing suitability for analysis in Excel, stream insights generation",
@@ -16,7 +16,7 @@ export default function ExperienceSection() {
     { 
       title: "Data Scientist", 
       company: "Korangle", 
-      period: "Dec’21 – Jul’22",
+      period: "Dec'21 - Jul'22",
       responsibilities: [
         "Automated data sampling using Python, reducing processing time by 40% while conducting rigorous statistical analyses on 50,000+ entries for data validation, ensuring data integrity for product development and marketing strategies",
         "Developed a customer segmentation model using K-Means clustering to find new set of customers",
@@ -28,7 +28,7 @@ export default function ExperienceSection() {
     { 
       title: "Data Scientist (Intern)", 
       company: "Udemy", 
-      period: "May’21 – July’21",
+      period: "May'21 - July'21",
       responsibilities: [
         "Designed queries, stored procedures, triggers, cursors, tables, and views in SQL Server to provide structured data to generate comprehensive analytical reports",
         "Optimized ETL by leveraging SQL and Python, 18% reduction in data preparation time, saving 8hr/week for analytic team",

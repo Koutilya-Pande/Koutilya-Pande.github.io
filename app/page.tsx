@@ -4,11 +4,11 @@ import React, { useMemo } from 'react';
 import { useState, useEffect, useRef } from 'react'
 import { Github, Linkedin, Mail } from 'lucide-react'
 
-import AboutSection from '@/src/components/about-section'
-import SkillsShowcase from '@/src/components/skills-showcase'
-import EducationSection from '@/src/components/education-section'
-import ProjectsSection from '@/src/components/projects-section'
-import TimelineExperience from '@/src/components/timeline-experience'
+import AboutSection from '../src/components/about-section'
+import SkillsShowcase from '../src/components/skills-showcase'
+import EducationSection from '../src/components/education-section'
+import ProjectsSection from '../src/components/projects-section'
+import TimelineExperience from '../src/components/timeline-experience'
 
 interface IntersectionState {
   about?: boolean;
@@ -30,31 +30,32 @@ export default function Home() {
   }), []);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const observerOptions = {
       root: null,
       rootMargin: '0px',
       threshold: 0.5,
-    };
+    }
 
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
-        setIsIntersecting((prev) => ({ ...prev, [entry.target.id]: entry.isIntersecting }));
+        setIsIntersecting(prev => ({ ...prev, [entry.target.id]: entry.isIntersecting }))
         if (entry.isIntersecting) {
-          setActiveSection(entry.target.id as keyof IntersectionState);
+          setActiveSection(entry.target.id as keyof IntersectionState)
         }
-      });
-    };
+      })
+    }
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const observer = new IntersectionObserver(observerCallback, observerOptions)
 
     Object.values(sectionRefs).forEach((ref) => {
       if (ref.current) {
         observer.observe(ref.current)
       }
-    });
+    })
 
-    return () => observer.disconnect();
-  }, [sectionRefs]);
+    return () => observer.disconnect()
+  }, [])
 
   const scrollToSection = (section: keyof IntersectionState) => {
     setActiveSection(section)

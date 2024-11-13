@@ -1,5 +1,5 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from '@/src/components/ui/card'
-import Image from 'next/image'
+import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from '../src/components/ui/card'
+import React from 'react';
 export default function EducationSection() {
   const education = [
     { 
@@ -26,13 +26,7 @@ export default function EducationSection() {
           <Card key={index} className="bg-white rounded-xl transition-transform hover:scale-105">
             <CardHeader>
               <div className="flex items-start mt-2"> {/* Flex container for logo and text */}
-                <Image 
-                  src={edu.logo} 
-                  alt={`${edu.school} logo`} 
-                  width={12} // Set the width of the logo
-                  height={12} // Set the height of the logo
-                  className="mr-4" // Add margin to the right
-                /> 
+                <img src={edu.logo} alt={`${edu.school} logo`} className="h-12 w-12 mr-4" /> {/* Logo */}
                 <div className="flex-1"> {/* Allow text to take remaining space */}
                   <CardTitle className="font-bold">{edu.degree}</CardTitle> {/* Degree name on the left */}
                   <CardDescription>
