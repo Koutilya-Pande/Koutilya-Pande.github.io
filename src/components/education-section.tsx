@@ -7,7 +7,7 @@ export default function EducationSection() {
       major: "Data Science", 
       school: "RUTGERS UNIVERSITY", 
       year: "2022-2023",
-      logo: "/images/Education/Rutgers_logo.png" // Path to the university logo
+      logo: "/images/Education/Rutgers_Logo.png" // Path to the university logopublic\images\Education\Rutgers_Logo.png
     },
     { 
       degree: "Bachelors of Technology", 
