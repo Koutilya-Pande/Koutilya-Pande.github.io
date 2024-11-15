@@ -4,12 +4,29 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/componen
 import { ExternalLink, Github } from 'lucide-react'
 
 export default function ProjectsSection() {
-  const projects = [
+  const projects = [{
+    name: "CoverMe.AI",
+    description: "This project is an AI-powered Chrome extension for customized cover letter generation. It streamlines the process of creating tailored cover letters, leveraging AI to craft professional and personalized content efficiently.",
+    image: "/images/project-images/project2.jpg",
+    githubLink: "N/A"
+  },
     { 
       name: "PDFGenie", 
       description: "The MultiPDF Chat App is a Python app that uses OpenAI LLMs, ChromaDB for vectorization and embedding, and a Langchain pipeline to enable natural language queries on multiple PDFs. Hosted on Streamlit, it delivers relevant responses based on the PDF content without fine-tuning.",
       image: "/images/project-images/project1.jpg",
       githubLink: "https://github.com/Koutilya-Pande/ChatPDF_AI"
+    },
+    {
+      name: "YouTube Video Summarization and Chatbot",
+      description: "This professional tool leverages Gemini Pro to generate concise and insightful summaries of YouTube videos while also providing an interactive chatbot feature. Users can quickly understand key points through detailed summaries, explore specific topics with timestamped breakdowns, and engage with the chatbot for deeper insights or specific queries related to the video content.",
+      image: "/images/project-images/project3.jpg",
+      githubLink: "https://github.com/Koutilya-Pande/YT-Trancribe"
+    },
+    {
+      name: "NLP Naruto Analysis",
+      description: "This project empowers users to analyze their favorite series using Natural Language Processing (NLP) techniques and Large Language Models (LLMs). From scraping data to building chatbots, it provides a comprehensive approach to exploring characters, themes, and textual classifications. By integrating models into an intuitive web interface with Gradio, this project combines cutting-edge NLP technology with interactive tools.",
+      image: "/images/project-images/project1.jpg",
+      githubLink: "https://github.com/Koutilya-Pande/NLP-Series-Analysis"
     },
     { 
       name: "Pandemic Predictor", 
@@ -37,10 +54,12 @@ export default function ProjectsSection() {
     },
     { 
       name: "Lead Source Scoring", 
-      description: "A brief description of Project Six goes here.",
+      description: "Lead Scoring is such a powerful metric when it comes to quantifying the lead & it is nowadays used by every CRM. In this repository, we are going to take a look at the UpGrad lead scoring case study and see how can we solve this problem through several supervised machine learning models.",
       image: "/images/project-images/leadscoring.png",
       githubLink: "https://github.com/Koutilya-Pande/lead-source"
     }
+    
+    
   ]
 
   return (
