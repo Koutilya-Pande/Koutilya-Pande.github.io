@@ -74,20 +74,41 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 text-gray-800">
       <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-10">
         <nav className="container mx-auto px-6 py-4">
-          <ul className="flex justify-center space-x-6">
-            {(Object.keys(sectionRefs) as Array<keyof IntersectionState>).map((section) => (
-              <li key={section}>
-                <button
-                  onClick={() => scrollToSection(section)}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    activeSection === section ? 'text-primary border-b-2 border-primary' : 'text-gray-600'
-                  }`}
-                >
-                  {section.charAt(0).toUpperCase() + section.slice(1)}
-                </button>
-              </li>
-            ))}
-          </ul>
+          <div className="relative">
+            <ul className="flex justify-center space-x-6">
+              {(Object.keys(sectionRefs) as Array<keyof IntersectionState>).map((section) => (
+                <li key={section}>
+                  <button
+                    onClick={() => scrollToSection(section)}
+                    className={`text-sm font-medium transition-colors hover:text-primary ${
+                      activeSection === section ? 'text-primary border-b-2 border-primary' : 'text-gray-600'
+                    }`}
+                  >
+                    {section.charAt(0).toUpperCase() + section.slice(1)}
+                  </button>
+                </li>
+              ))}
+            </ul>
+
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center space-x-4">
+              <a
+                href="https://www.linkedin.com/in/koutilya-pande"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-primary transition-colors"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a
+                href="https://github.com/Koutilya-Pande"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-primary transition-colors"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
         </nav>
       </header>
 

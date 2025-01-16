@@ -7,7 +7,9 @@ export default function ExperienceSection() {
       company: "Keelworks Foundation", 
       period: "Mar'24 - Present",
       responsibilities: [
+        "Implemented sentiment analysis using BERT and NER using spaCy with fellow machine learning engineers for improving customer feedback categorization and enhanced information extraction efficiency by 40%",
         "Optimized homepage layout by A/B testing comparing two versions, resulting in a 28% increase in CTR",
+        "Led data collection and data preprocessing team, ensuring the data quality and integrity for models",
         "Utilized Power BI to transform and merge data, enhancing suitability for analysis in Excel, stream insights generation",
         "Created mockups of dashboards and data visualizations in MS Excel, refining design concepts and ensuring alignment with project objective",
         "Presented monthly performance reports to stakeholders using Power BI and Excel, highlighting insights on user behavior that led to a revamp of the homepage layout, improving navigation efficiency by 20%"
@@ -22,7 +24,7 @@ export default function ExperienceSection() {
         "Developed a customer segmentation model using K-Means clustering to find new set of customers",
         "Assisted with customer journey mapping, Led a Random Forest customer satisfaction model from scratch, synthesizing data from customer(School Directors) surveys, resulting in 12% fewer customer complaints",
         "Proposed a Tableau tool that prioritized and generated lists of customers with potential pricing improvement allowing the team to contract changes and re-negotiations, build dynamic price models to maximize profits",
-        "Analyzed competitive market data and customer queries, uncovering insights that led to a new feature ‘Teacher Rating’ for the application, increasing market penetration by 17%"
+        "Analyzed competitive market data and customer queries using NLP, uncovering insights that led to a new feature ‘Teacher Rating’ for the application, increasing market penetration by 17%"
       ]
     },
     { 
@@ -34,6 +36,17 @@ export default function ExperienceSection() {
         "Optimized ETL by leveraging SQL and Python, 18% reduction in data preparation time, saving 8hr/week for analytic team",
         "Devised classification models (Logistic Regression, Decision Tree, Random Forest) to predict loan approval outcomes",
         "Successfully addressed class imbalance in loan approval prediction model by conducting extensive model evaluation (precision, recall, F1 score, AUC-ROC) and fine-tuning to achieve accuracy of 84.06%"
+      ]
+    },
+    { 
+      title: "Machine Learning Engineer (Intern)", 
+      company: "Sky-fi Labs", 
+      period: "Apr' 20 - June'20",
+      responsibilities: [
+        "Performed Exploratory Data Analysis, preprocessed data with outlier removal, feature scaling and imputation",
+        "Implemented diverse regression algorithms; proposed cross-validation for optimized model selection.",
+        "Used L1/L2 regularization to improve model robustness, mitigating over-fitting, resulting in an increase of 13% accuracy",
+        "Constructed comprehensive data dashboards with Tableau, fostering a deeper understanding of critical business metrics."
       ]
     }
   ]

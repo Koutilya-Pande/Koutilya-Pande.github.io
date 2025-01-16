@@ -1,8 +1,9 @@
 'use client'
 
-import { Card, CardContent } from '@/components/ui/card'
+import { Card, CardContent } from '../src/components/ui/card'
 import { Circle } from 'lucide-react'
 import Image from 'next/image'
+import React from 'react'
 
 interface Experience {
   title: string;
@@ -17,12 +18,10 @@ const TimelineExperience = () => {
     { 
       title: "Data Scientist", 
       company: "Keelworks Foundation", 
-      period: "Mar'24 - Present",
+          period: "Mar'24 - Present",
       logo: "/images/company/keelworks-logo.jpg",
       responsibilities: [
-        "Implemented sentiment analysis using BERT and NER using spaCy with fellow machine learning engineers for improving customer feedback categorization and enhanced information extraction efficiency by 40%",
         "Optimized homepage layout by A/B testing comparing two versions, resulting in a 28% increase in CTR",
-        "Led data collection and data preprocessing team, ensuring the data quality and integrity for models",
         "Utilized Power BI to transform and merge data, enhancing suitability for analysis in Excel, stream insights generation",
         "Created mockups of dashboards and data visualizations in MS Excel, refining design concepts and ensuring alignment with project objective",
         "Presented monthly performance reports to stakeholders using Power BI and Excel, highlighting insights on user behavior that led to a revamp of the homepage layout, improving navigation efficiency by 20%"
@@ -51,18 +50,6 @@ const TimelineExperience = () => {
         "Optimized ETL by leveraging SQL and Python, 18% reduction in data preparation time, saving 8hr/week for analytic team",
         "Devised classification models (Logistic Regression, Decision Tree, Random Forest) to predict loan approval outcomes",
         "Successfully addressed class imbalance in loan approval prediction model by conducting extensive model evaluation (precision, recall, F1 score, AUC-ROC) and fine-tuning to achieve accuracy of 84.06%"
-      ]
-    },
-    { 
-      title: "Machine Learning Engineer (Intern)", 
-      company: "Sky-fi Labs", 
-      period: "Apr' 20 - June'20",
-      logo: "/images/company/sky-fi.jpg",
-      responsibilities: [
-        "Performed Exploratory Data Analysis, preprocessed data with outlier removal, feature scaling and imputation",
-        "Implemented diverse regression algorithms; proposed cross-validation for optimized model selection.",
-        "Used L1/L2 regularization to improve model robustness, mitigating over-fitting, resulting in an increase of 13% accuracy",
-        "Constructed comprehensive data dashboards with Tableau, fostering a deeper understanding of critical business metrics."
       ]
     }
   ]

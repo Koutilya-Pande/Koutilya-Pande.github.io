@@ -1,9 +1,20 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, FileText } from 'lucide-react'
 import React from 'react';
 
 export default function AboutSection() {
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const openResume = () => {
+    window.open('/images/Koutilya_Pande_Resume_2025.pdf', '_blank');
+  };
+
   return (
     <div className="text-center">
       <Image
@@ -20,10 +31,18 @@ export default function AboutSection() {
         With a strong foundation in data science and a keen eye for innovation, 
         I strive to push the boundaries of whats possible with AI.
       </p>
-      <Button onClick={() => {}} className="animate-bounce">
-        Explore My Skills
-        <ChevronDown className="ml-2 h-4 w-4" />
-      </Button>
+      <div className="space-y-4">
+        <Button onClick={openResume} variant="outline" className="bg-white">
+          <FileText className="mr-2 h-4 w-4" />
+          View Resume
+        </Button>
+        <div>
+          <Button onClick={scrollToProjects} className="animate-bounce">
+            Explore My Projects
+            <ChevronDown className="ml-2 h-4 w-4" />
+          </Button>
+        </div>
+      </div>
     </div>
   )
 }

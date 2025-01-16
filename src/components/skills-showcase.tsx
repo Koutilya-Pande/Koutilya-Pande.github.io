@@ -20,10 +20,10 @@ const SkillsShowcase = () => {
       color: 'bg-blue-500',
       skills: [
         'Web Scraping (BeautifulSoup, Scrapy)',
+        'Complex SQL Queries',
         'API Integration & RESTful Services',
         'SQL & NoSQL Databases (MySQL, MongoDB)',
-        'Cloud Services for Data Storage (AWS S3, GCP)',
-        'Real-time Data Streaming (Kafka, Apache Flink)'
+        'Cloud Services for Data Storage (AWS S3, GCP)'
       ]
     },
     {
@@ -32,9 +32,9 @@ const SkillsShowcase = () => {
       icon: <Code className="h-6 w-6" />,
       color: 'bg-green-500',
       skills: [
-        'ETL Pipeline Development (Airflow, Luigi)',
+        'ETL Pipeline Development',
         'Data Cleaning & Transformation (Pandas, NumPy)',
-        'Apache Spark & Distributed Processing',
+        'PCA and Dimensionality Reduction',
         'Data Quality Assurance & Validation',
         'Data Wrangling for Unstructured Data'
       ]
@@ -46,7 +46,8 @@ const SkillsShowcase = () => {
       color: 'bg-yellow-500',
       skills: [
         'Statistical Analysis (Hypothesis Testing, Regression)',
-        'Data Visualization (Plotly, D3.js, Tableau)',
+        'z-test, t-test, ANOVA, Chi-square',
+        'Data Visualization (Plotly, PowerBI, Tableau)',
         'A/B Testing & Experimentation',
         'Feature Selection & Engineering',
         'Exploratory Data Analysis (EDA)'
@@ -60,8 +61,8 @@ const SkillsShowcase = () => {
       skills: [
         'Supervised & Unsupervised Learning',
         'Deep Learning Frameworks (TensorFlow, PyTorch)',
-        'NLP & Computer Vision Techniques',
-        'Reinforcement Learning',
+        'Semtiment Analysis,NER Models ',
+        'Text Summarization & Classification',
         'Feature Engineering & Dimensionality Reduction'
       ]
     },
@@ -80,28 +81,28 @@ const SkillsShowcase = () => {
     },
     {
       id: 'prompt',
-      title: 'Prompt Engineering & RAG',
+      title: 'RAG',
       icon: <MessageSquare className="h-6 w-6" />,
       color: 'bg-pink-500',
       skills: [
         'Prompt Design & Optimization for LLMs (ChatGPT, GPT-4)',
-        'Retrieval-Augmented Generation (RAG) Techniques',
+        'Hybrid Retrieval-Augmented Generation (RAG) Techniques',
         'Zero-shot and Few-shot Prompting',
         'Embeddings and Semantic Search',
-        'Iterative Prompt Testing and Evaluation'
+        'Agentic RAG'
       ]
     },
     {
       id: 'mlops',
-      title: 'MLOps & Model Deployment',
+      title: 'AI Agents',
       icon: <Cloud className="h-6 w-6" />,
       color: 'bg-red-500',
       skills: [
-        'MLOps Frameworks (MLflow, TFX, Kubeflow)',
-        'Docker & Kubernetes for Containerization',
-        'CI/CD for Model Deployment',
-        'Model Serving (TensorFlow Serving, FastAPI)',
-        'Monitoring & Maintenance of Deployed Models'
+        'Langgraph & Langchain',
+        'phidata',
+        'crewAI',
+        'OpenAI Swarm',
+        'Agentic Workflows'
       ]
     },
     {
