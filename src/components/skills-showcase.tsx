@@ -63,46 +63,48 @@ const SkillsShowcase = () => {
         'Deep Learning Frameworks (TensorFlow, PyTorch)',
         'Semtiment Analysis,NER Models ',
         'Text Summarization & Classification',
-        'Feature Engineering & Dimensionality Reduction'
+        'Hyperparameter Tuning & Model Evaluation'
       ]
     },
     {
       id: 'optimization',
-      title: 'Model Fine-Tuning & Optimization',
+      title: 'Data Driven Decision Making',
         icon: <Settings className="h-6 w-6" />,
       color: 'bg-orange-500',
       skills: [
-        'Fine-Tuning Pretrained Models (BERT, GPT)',
-        'Hyperparameter Tuning (Grid Search, Bayesian Optimization)',
-        'Model Ensembling & Blending Techniques',
-        'Performance Optimization for Large Models',
-        'Model Compression (Quantization, Pruning)'
+        'Predictive Analytics',
+        'Time Series Analysis',
+        'Regression and Classification',
+        'Clustering and Anomaly Detection',
+        'Methods for model optimization including L1/L2 Regularization, Feature Selection, and Feature Engineering',
+        
       ]
     },
     {
       id: 'prompt',
-      title: 'RAG',
+      title: 'LLMs, Fine-Tuning & RAG',
       icon: <MessageSquare className="h-6 w-6" />,
       color: 'bg-pink-500',
-      skills: [
-        'Prompt Design & Optimization for LLMs (ChatGPT, GPT-4)',
+      skills: ['Fine-Tuning open-source LLMs (BERT, Llama) using LORA',
+        'Prompt Design & Optimization for LLMs',
         'Hybrid Retrieval-Augmented Generation (RAG) Techniques',
-        'Zero-shot and Few-shot Prompting',
-        'Embeddings and Semantic Search',
-        'Agentic RAG'
+        'Vector Embedding and Chunking Techniques for different kind of dataset (CSV, PDF, Web, Graphs, Images)',
+        
+        
+        
       ]
     },
     {
       id: 'mlops',
-      title: 'AI Agents',
+      title: 'AI Agents & Workflows',
       icon: <Cloud className="h-6 w-6" />,
       color: 'bg-red-500',
-      skills: [
+      skills: ['Conversational Chatbot with tools and Memory',  
+        'Multi-agent workflows and automation',
         'Langgraph & Langchain',
-        'phidata',
-        'crewAI',
-        'OpenAI Swarm',
-        'Agentic Workflows'
+        'phidata, crewAI, OpenAI Swarm',
+        'Agentic RAG', 
+        
       ]
     },
     {
