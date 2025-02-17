@@ -12,7 +12,7 @@ export default function AboutSection() {
   };
 
   const openResume = () => {
-    window.open('/images/Koutilya_Pande_Resume_2025.pdf', '_blank');
+    window.open('/images/Koutilya-Pande_Resume.pdf', '_blank');
   };
 
   return (
